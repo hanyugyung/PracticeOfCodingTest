@@ -4,7 +4,7 @@ fun solution32(number: IntArray): Int {
     for(i in 0..number.size - 1) {
         for(j in 0.. number.size - 1) {
             for(k in 0..number.size - 1) {
-                if(i != j && j != k) {
+                if(i != j && j != k && i != k) {
                     if(number[i] + number[j] + number[k] == 0) answer++
                 }
             }
